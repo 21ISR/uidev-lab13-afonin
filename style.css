@@ -11,6 +11,9 @@ html {
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
     font-family: sans-serif;
+    font-size: 100%;
+    font-size: 1rem; */
+    font-size: 62.5%;
 }
 
 body,
@@ -33,7 +36,9 @@ ol[role="list"] {
 
 body {
     min-height: 100vh;
+    min-width: 100vw;
     line-height: 1.5;
+    font-size: 1.6rem;
 }
 
 h1,
@@ -82,26 +87,44 @@ textarea:not([rows]) {
 
 .content {
     background: #020024;
-    background: linear-gradient(
-        222deg,
-        rgba(2, 0, 36, 1) 0%,
-        rgba(9, 9, 121, 1) 35%,
-        rgba(0, 212, 255, 1) 100%
-    );
+    background: linear-gradient(222deg,
+            rgba(2, 0, 36, 1) 0%,
+            rgba(9, 9, 121, 1) 35%,
+            rgba(0, 212, 255, 1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: white;
+    min-height: 100vh;
+    margin-inline: auto;
+    max-width: 1440px;
+
 }
 
 .sizes {
     display: flex;
     gap: 4rem;
+    /* flex-wrap: wrap; */
 }
 
 .sizes div {
     padding: 1rem 2rem;
     border-radius: 1rem;
     background-color: black;
+
 }
+
+#name {
+    font-size: 1.6rem;
+}
+.container{
+    padding-inline: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 56.25%;
+    }
+}
+ 
