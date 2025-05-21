@@ -41,6 +41,20 @@ body {
     font-size: 1.6rem;
 }
 
+
+    .sizes {
+    display: flex;
+    gap: 4rem;
+    /* flex-wrap: wrap; */
+}
+
+.sizes div {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: black;
+
+}
+
 h1,
 h2,
 h3,
@@ -81,6 +95,17 @@ textarea:not([rows]) {
     min-height: 10em;
 }
 
+    .container{
+    padding-inline: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 56.25%;
+    }
+}
+ 
+
 :target {
     scroll-margin-block: 5ex;
 }
@@ -97,34 +122,14 @@ textarea:not([rows]) {
     flex-direction: column;
     color: white;
     min-height: 100vh;
-    margin-inline: auto;
-    max-width: 1440px;
+
+
 
 }
 
-.sizes {
-    display: flex;
-    gap: 4rem;
-    /* flex-wrap: wrap; */
-}
 
-.sizes div {
-    padding: 1rem 2rem;
-    border-radius: 1rem;
-    background-color: black;
-
-}
 
 #name {
     font-size: 1.6rem;
 }
-.container{
-    padding-inline: 2rem;
-}
 
-@media screen and (max-width: 1024px) {
-    html {
-        font-size: 56.25%;
-    }
-}
- 
